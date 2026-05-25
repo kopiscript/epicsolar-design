@@ -66,7 +66,7 @@ export default function AnalyticsPage() {
                 <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
                 <XAxis dataKey="date" tick={{ fontSize: 11 }} />
                 <YAxis tick={{ fontSize: 11 }} domain={[12, 19]} />
-                <Tooltip contentStyle={{ fontSize: 12, borderRadius: 8 }} formatter={(v: number) => [`${v} MWh`]} />
+                <Tooltip contentStyle={{ fontSize: 12, borderRadius: 8 }} formatter={(v) => [`${v} MWh`]} />
                 <Legend wrapperStyle={{ fontSize: 11 }} />
                 <Area type="monotone" dataKey="before" name="Before Cleaning" stroke="#FCC63A" strokeWidth={2} fill="url(#colorBefore)" />
                 <Area type="monotone" dataKey="after" name="After Cleaning" stroke="#003DA5" strokeWidth={2} fill="url(#colorAfter)" />
@@ -105,7 +105,7 @@ export default function AnalyticsPage() {
                   <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
                   <XAxis dataKey="month" tick={{ fontSize: 11 }} />
                   <YAxis tick={{ fontSize: 11 }} domain={[80, 100]} />
-                  <Tooltip contentStyle={{ fontSize: 12, borderRadius: 8 }} formatter={(v: number) => [`${v}%`]} />
+                  <Tooltip contentStyle={{ fontSize: 12, borderRadius: 8 }} formatter={(v) => [`${v}%`]} />
                   <Line type="monotone" dataKey="efficiency" name="Efficiency %" stroke="#FCC63A" strokeWidth={2.5} dot={{ r: 4, fill: "#FCC63A" }} />
                 </LineChart>
               </ResponsiveContainer>
@@ -123,7 +123,7 @@ export default function AnalyticsPage() {
                   <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
                   <XAxis dataKey="zone" tick={{ fontSize: 11 }} />
                   <YAxis tick={{ fontSize: 11 }} domain={[70, 100]} />
-                  <Tooltip contentStyle={{ fontSize: 12, borderRadius: 8 }} formatter={(v: number) => [`${v}%`]} />
+                  <Tooltip contentStyle={{ fontSize: 12, borderRadius: 8 }} formatter={(v) => [`${v}%`]} />
                   <Bar
                     dataKey="efficiency"
                     name="Efficiency %"

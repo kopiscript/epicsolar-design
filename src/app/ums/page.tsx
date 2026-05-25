@@ -84,7 +84,7 @@ export default function UMSPage() {
                     onChange={(e) => setSearch(e.target.value)}
                   />
                 </div>
-                <Select value={roleFilter} onValueChange={setRoleFilter}>
+                <Select value={roleFilter} onValueChange={(v) => setRoleFilter(v ?? "all")}>
                   <SelectTrigger className="h-8 text-xs w-32">
                     <SelectValue placeholder="All roles" />
                   </SelectTrigger>

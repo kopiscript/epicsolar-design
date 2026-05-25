@@ -62,7 +62,7 @@ export default function AlertsPage() {
             <div className="flex flex-wrap items-center justify-between gap-3">
               <CardTitle className="text-sm font-semibold">All Alerts</CardTitle>
               <div className="flex flex-wrap gap-2">
-                <Select value={severity} onValueChange={setSeverity}>
+                <Select value={severity} onValueChange={(v) => setSeverity(v ?? "all")}>
                   <SelectTrigger className="h-8 text-xs w-32">
                     <SelectValue placeholder="Severity" />
                   </SelectTrigger>

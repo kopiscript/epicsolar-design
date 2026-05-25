@@ -90,7 +90,7 @@ export default function SchedulePage() {
                     onChange={(e) => setSearch(e.target.value)}
                   />
                 </div>
-                <Select value={filter} onValueChange={setFilter}>
+                <Select value={filter} onValueChange={(v) => setFilter(v ?? "all")}>
                   <SelectTrigger className="h-8 text-xs w-36">
                     <SelectValue placeholder="Filter status" />
                   </SelectTrigger>

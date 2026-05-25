@@ -32,7 +32,7 @@ export function EnergyChart() {
             <YAxis tick={{ fontSize: 11 }} domain={[12, 19]} />
             <Tooltip
               contentStyle={{ fontSize: 12, borderRadius: 8 }}
-              formatter={(v: number) => [`${v} MWh`]}
+              formatter={(v) => [`${v} MWh`]}
             />
             <Legend wrapperStyle={{ fontSize: 11 }} />
             <Line
