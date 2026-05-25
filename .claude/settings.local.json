@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx shadcn@latest init --defaults --yes)",
+      "Bash(npx shadcn@latest add card badge button table tabs avatar dropdown-menu separator progress alert sheet dialog select calendar --yes)"
+    ]
+  }
+}
